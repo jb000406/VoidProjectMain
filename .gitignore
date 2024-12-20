@@ -55,11 +55,15 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
+# Void Projrect Ignore Directory
+/WorkSpace/
+/Assets/Chinese/
+/Assets/_WorkSpace/
+
 # Builds
 *.apk
 *.aab
 *.unitypackage
-*.unitypackage.meta
 *.app
 
 # Crashlytics generated file
