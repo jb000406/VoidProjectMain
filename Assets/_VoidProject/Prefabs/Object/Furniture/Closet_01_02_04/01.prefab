@@ -406,7 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4961274868257875670}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level2HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -839,7 +839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 466008741405454203}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level2HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1281,7 +1281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3808807528670226911}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level2HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1343,7 +1343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957200190383794329}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level2HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2456040368169253636}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level3HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,6 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae85c3aad7816d54da01fcda6790e399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundVolume: 1
   releaseDistance: 1
   minRoatationDelta: 20
 --- !u!114 &2276133623365293494
@@ -520,7 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057653068815256147}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level3HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,7 +618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811582736737642397}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level3HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8024811119442425435}
   m_Layer: 0
-  m_Name: KeySpawnPoint
+  m_Name: Level3HintSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1190,6 +1191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae85c3aad7816d54da01fcda6790e399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundVolume: 1
   releaseDistance: 1
   minRoatationDelta: 20
 --- !u!114 &7619029572112139598

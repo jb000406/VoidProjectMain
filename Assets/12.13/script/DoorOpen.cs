@@ -14,7 +14,7 @@ namespace HJ
         private Transform grabbingHand;
         private AudioSource audioSource;
         private HingeJoint joint;
-        public GameObject player;
+        private GameObject player;
         private CapsuleCollider playerCollider;
 
         public Transform closedPosition;
@@ -38,6 +38,7 @@ namespace HJ
             grabInteractable = GetComponent<XRGrabInteractable>();
             audioSource = GetComponent<AudioSource>();
             joint = GetComponent<HingeJoint>();
+            player = GameObject.FindWithTag("Player");
             playerCollider = player.GetComponent<CapsuleCollider>();
 
             //

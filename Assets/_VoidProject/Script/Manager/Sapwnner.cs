@@ -47,13 +47,11 @@ namespace VoidProject
 
         private void Start()
         {
-            spawnPoints = GameObject.FindGameObjectsWithTag("KeySpawnPoint");
-
-            if (spawnPoints.Length > 0)
+            if (spawnObject.Count > 0)
             {
-                int randomSpawnNumber = Random.Range(0, spawnPoints.Length);
+                int randomSpawnNumber = Random.Range(0, spawnObject.Count);
 
-                Instantiate(key, spawnPoints[randomSpawnNumber].transform.GetChild(0).position, Quaternion.identity);
+                Instantiate(key, spawnObject[randomSpawnNumber].transform.GetChild(0).position, Quaternion.identity);
 
             }
         }
@@ -83,7 +81,7 @@ namespace VoidProject
                 if (RandomNumber() % 2 == 0)
                 {
                     var cobj = Instantiate(randomCheswtObjectList[randomChestobjInt], ChestSpawnerPoint[i].position, ChestSpawnerPoint[i].transform.rotation, ChestSpawnerPoint[i]);
-                    //BreakableObject breakobj = cobj.GetComponent<BreakableObject>();
+                    
                     spawnObject.Add(cobj);
                 }
             }
