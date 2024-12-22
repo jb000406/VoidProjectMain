@@ -21,6 +21,8 @@ namespace VoidProject
         [SerializeField] private Transform[] ChestSpawnerPoint;
         [SerializeField] private List<GameObject> spawnObject = new List<GameObject>();
 
+        private GameObject[] keySpawnObjectArray;
+
         [SerializeField] private Transform player_Transform;
         private GameObject[] spawnPoints;      // 스폰 포인트 배열 -- 임시
         public GameObject key;
@@ -47,11 +49,12 @@ namespace VoidProject
 
         private void Start()
         {
-            if (spawnObject.Count > 0)
+            keySpawnObjectArray = spawnObject.ToArray();
+            if (keySpawnObjectArray.Length > 0)
             {
-                int randomSpawnNumber = Random.Range(0, spawnObject.Count);
+                int randomSpawnNumber = Random.Range(0, keySpawnObjectArray.Length);
 
-                Instantiate(key, spawnObject[randomSpawnNumber].transform.GetChild(0).position, Quaternion.identity);
+                Instantiate(key, keySpawnObjectArray[randomSpawnNumber].transform.GetChild(0).position, Quaternion.identity);
 
             }
         }
@@ -64,7 +67,7 @@ namespace VoidProject
             for (int i = 0; i < breakableSpawnerPoint.Length; i++)
             {
                 int randomBreakobjInt = Random.Range(0, randomBreakableObjectList.Count);
-                RandomNumber();
+                //RandomNumber();
                 if (RandomNumber() % 3 == 0)
                 {
                     var bobj = Instantiate(randomBreakableObjectList[randomBreakobjInt], breakableSpawnerPoint[i].position, Quaternion.identity, breakableSpawnerPoint[i]);
@@ -77,7 +80,7 @@ namespace VoidProject
             for (int i = 0; i < ChestSpawnerPoint.Length; i++)
             {
                 int randomChestobjInt = Random.Range(0, randomCheswtObjectList.Count);
-                RandomNumber();
+                //RandomNumber();
                 if (RandomNumber() % 2 == 0)
                 {
                     var cobj = Instantiate(randomCheswtObjectList[randomChestobjInt], ChestSpawnerPoint[i].position, ChestSpawnerPoint[i].transform.rotation, ChestSpawnerPoint[i]);
