@@ -2,9 +2,8 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
-using VoidProject;
 
-namespace HJ
+namespace VoidProject
 {
     public class DoorOpen : MonoBehaviour
     {
@@ -14,8 +13,7 @@ namespace HJ
         private Transform grabbingHand;
         private AudioSource audioSource;
         private HingeJoint joint;
-        private GameObject player;
-        private CapsuleCollider playerCollider;
+        public CapsuleCollider playerCollider;
 
         public Transform closedPosition;
 
@@ -38,8 +36,7 @@ namespace HJ
             grabInteractable = GetComponent<XRGrabInteractable>();
             audioSource = GetComponent<AudioSource>();
             joint = GetComponent<HingeJoint>();
-            player = GameObject.FindWithTag("Player");
-            playerCollider = player.GetComponent<CapsuleCollider>();
+            playerCollider = GetComponent<CapsuleCollider>();
 
             //
             initialRadius = playerCollider.radius;

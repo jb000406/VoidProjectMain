@@ -54,7 +54,7 @@ namespace VoidProject
             {
                 int randomSpawnNumber = Random.Range(0, keySpawnObjectArray.Length);
 
-                Instantiate(key, keySpawnObjectArray[randomSpawnNumber].transform.GetChild(0).position, Quaternion.identity);
+                Instantiate(key, keySpawnObjectArray[randomSpawnNumber].transform.position, Quaternion.identity);
 
             }
         }
