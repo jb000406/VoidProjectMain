@@ -1778,6 +1778,7 @@ GameObject:
   - component: {fileID: 1501780176663464797}
   - component: {fileID: 4515809122943858448}
   - component: {fileID: 4556346397954476211}
+  - component: {fileID: 69829117528476159}
   m_Layer: 0
   m_Name: XR Origin (VR)
   m_TagString: Player
@@ -1917,18 +1918,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3938733691950374091}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3820a896af4ea404e96d134485f0c9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 0}
-  loadToScene: GameOver
   maxHealth: 150
   damageFlash: {fileID: 0}
   healthBarUI: {fileID: 0}
   healthBarImage: {fileID: 0}
   playerCamera: {fileID: 5219742493638532376}
+--- !u!114 &69829117528476159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938733691950374091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7789436587530a24b8a9d0b8aa85ca16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 1501780176663464797}
+  vrCamera: {fileID: 5219742493638532376}
+  upperBodyCollider: {fileID: 1350534462160647201}
+  minHeight: 0.5
+  colliderOffset: 0.1
 --- !u!1 &3963632030564090754
 GameObject:
   m_ObjectHideFlags: 0
