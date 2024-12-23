@@ -4,23 +4,27 @@ using UnityEngine;
 
 namespace VoidProject
 {
-    public class UITrigger : MonoBehaviour
+    public class UITrigger : WorldMenuUI
     {
         #region Variables
-        public GameObject sequenceCanvas;
-        public TextMeshProUGUI text;
+        //public GameObject sequenceCanvas;
+       //public TextMeshProUGUI text;
         [SerializeField] private string sequenceText = "text";
         [SerializeField] private float offDelay = 10f;
+        //플레이어
+        public GameObject Locomotion;
+        //private Transform playerCamera;
+
+        //콜라이더
+        private Collider UIcollider;
         #endregion
 
-        private void Start()
+        protected override void Start()
         {
+            base.Start();
             //트리거 설정
-            Collider c = GetComponent<Collider>();
-            c.isTrigger = true;
-
-            //시퀀스
-            sequenceCanvas.SetActive(false);
+            UIcollider = GetComponent<Collider>();
+            UIcollider.gameObject.SetActive(true);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -33,15 +37,13 @@ namespace VoidProject
 
         private IEnumerator ActiveSequence()
         {
-            sequenceCanvas.SetActive(true);
-            text.text = sequenceText;
-
+            Locomotion.SetActive(false);
+            ShowMenuUI(sequenceText);
             yield return new WaitForSeconds(offDelay);
-
-            sequenceCanvas.SetActive(false);
-            text.text = "";
-
-            Destroy(this.gameObject);
+            HideMenuUI();
+            UIcollider.gameObject.SetActive(false);
+            Locomotion.SetActive(true);
+            Debug.Log("Sequence finished.");
         }
     }
 }
