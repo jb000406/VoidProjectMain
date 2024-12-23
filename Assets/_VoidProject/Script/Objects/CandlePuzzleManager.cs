@@ -17,6 +17,8 @@ namespace VoidProject
 
         [SerializeField] private GameObject fakeDoorParent;
         [SerializeField] private GameObject[] fakeDoorChild;
+
+        public GameObject grave;
         #endregion
 
         private void Start()
@@ -93,6 +95,9 @@ namespace VoidProject
                 doorChild[i].gameObject.SetActive(true);
                 fakeDoorChild[i].gameObject.SetActive(false);
             }
+
+            grave.SetActive(true);
+
 
         }
     }
