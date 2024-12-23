@@ -59,6 +59,7 @@ sysinfo.txt
 /WorkSpace/
 /Assets/Chinese/
 /Assets/_WorkSpace/
+/.utmp
 
 # Builds
 *.apk
