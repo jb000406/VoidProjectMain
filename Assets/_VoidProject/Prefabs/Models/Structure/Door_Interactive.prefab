@@ -358,7 +358,7 @@ MonoBehaviour:
   doorObject: {fileID: 6318997842972342277}
   maxAngle: 90
   minAngle: -90
-  rotationSpeed: 3
+  rotationSpeed: 5
   doorCloseDistance: 1
   doorAudio: {fileID: 5443315373876414620}
   autoCloseDelay: 2
@@ -372,7 +372,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2811744033162288539}
-  - component: {fileID: 2875272378306245330}
   m_Layer: 7
   m_Name: Door_Interactive
   m_TagString: Untagged
@@ -397,23 +396,3 @@ Transform:
   - {fileID: 6318997842972342277}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2875272378306245330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264888430270483284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedVersion: 0
-  m_OverrideArea: 0
-  m_Area: 0
-  m_OverrideGenerateLinks: 0
-  m_GenerateLinks: 0
-  m_IgnoreFromBuild: 0
-  m_ApplyToChildren: 1
-  m_AffectedAgents: ffffffff

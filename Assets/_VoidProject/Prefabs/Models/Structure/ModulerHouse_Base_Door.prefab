@@ -127,7 +127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710436319904180649}
-  - component: {fileID: 3679550696093780314}
+  - component: {fileID: 551287293136495582}
   m_Layer: 7
   m_Name: ModulerHouse_Base_Door
   m_TagString: Untagged
@@ -166,7 +166,7 @@ Transform:
   - {fileID: 679337317264793335}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3679550696093780314
+--- !u!114 &551287293136495582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,6 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710436320014985554}
+  - component: {fileID: 7569558494732657160}
   m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
@@ -220,6 +221,26 @@ Transform:
   - {fileID: 710436321138784757}
   m_Father: {fileID: 710436319904180649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7569558494732657160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710436320014985555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &710436320144899699
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710436320277417174}
+  - component: {fileID: 6126163645441833699}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -292,6 +314,26 @@ Transform:
   - {fileID: 3916350824459402642}
   m_Father: {fileID: 710436319904180649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6126163645441833699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710436320277417175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &710436320383344860
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710436321121756842}
-  - component: {fileID: 8820952161614546459}
+  - component: {fileID: 3876437459694318545}
   m_Layer: 7
   m_Name: Roofs
   m_TagString: Untagged
@@ -555,7 +597,7 @@ Transform:
   - {fileID: 1656157414933311939}
   m_Father: {fileID: 710436319904180649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8820952161614546459
+--- !u!114 &3876437459694318545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

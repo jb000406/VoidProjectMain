@@ -68,7 +68,6 @@ namespace VoidProject
 
         private void Completed()
         {
-            Debug.Log("퍼즐 완성");
             Instantiate(keyChest, spawnPoint.position, Quaternion.identity);
             SoundManager.Instance.PlayClipAtPoint(22, transform.position, soundVolume);
         }
@@ -82,7 +81,6 @@ namespace VoidProject
         //초기화
         private void Initial()
         {
-            Debug.Log("초기화");
 
             //소켓 값 초기화
             foreach (var s in chessSocket)

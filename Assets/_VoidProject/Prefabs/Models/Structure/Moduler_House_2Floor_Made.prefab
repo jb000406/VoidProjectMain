@@ -711,6 +711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6745507995395348724}
+  - component: {fileID: 4449453681134297384}
   m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
@@ -758,6 +759,26 @@ Transform:
   - {fileID: 54858236228611192}
   m_Father: {fileID: 5616071750018850457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4449453681134297384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209184721300303436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &5390471803902047388
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7691308865881914506}
+  - component: {fileID: 5105353758729006307}
   m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
@@ -826,6 +848,26 @@ Transform:
   - {fileID: 4201250399416177391}
   m_Father: {fileID: 5616071750018850457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5105353758729006307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439500113256005732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &5859452837039912370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1112976519493226146}
-  - component: {fileID: 7431032008082286873}
+  - component: {fileID: -8347268860064891009}
   m_Layer: 7
   m_Name: Moduler_House_2Floor_Made
   m_TagString: Untagged
@@ -1097,7 +1139,7 @@ Transform:
   - {fileID: 3223958745312318233}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &7431032008082286873
+--- !u!114 &-8347268860064891009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1338,6 +1380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8410296188925579941}
+  - component: {fileID: 4067667589461095865}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -1365,6 +1408,26 @@ Transform:
   - {fileID: 449290043345277205}
   m_Father: {fileID: 5616071750018850457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4067667589461095865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541770075503970426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &8690790622529968023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8750240304636808793}
-  - component: {fileID: 6865726466780410629}
+  - component: {fileID: 1041631498532465403}
   m_Layer: 7
   m_Name: Roof
   m_TagString: Untagged
@@ -1450,7 +1513,7 @@ Transform:
   - {fileID: 2065370289995720917}
   m_Father: {fileID: 1112976519493226146}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6865726466780410629
+--- !u!114 &1041631498532465403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7104623764649397295}
-  - component: {fileID: 5508442457483056430}
+  - component: {fileID: -3330122336972585147}
   m_Layer: 7
   m_Name: ModulerHouse_Door
   m_TagString: Untagged
@@ -173,7 +173,7 @@ Transform:
   - {fileID: 616243085119367144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5508442457483056430
+--- !u!114 &-3330122336972585147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

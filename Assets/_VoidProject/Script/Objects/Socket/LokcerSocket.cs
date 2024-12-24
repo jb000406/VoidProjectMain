@@ -19,7 +19,6 @@ namespace VoidProject
 
         protected override void OnTriggerEnter(Collider other)
         {
-            Debug.Log("충돌");
             Insert(other);
 
             StartCoroutine(LockerOpen(other));

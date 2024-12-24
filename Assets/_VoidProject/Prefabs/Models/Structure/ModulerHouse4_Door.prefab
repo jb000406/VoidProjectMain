@@ -4205,6 +4205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4590752543731965652}
+  - component: {fileID: 2585980578013431791}
   m_Layer: 7
   m_Name: Railings
   m_TagString: Untagged
@@ -4233,6 +4234,26 @@ Transform:
   - {fileID: 427112056602951943}
   m_Father: {fileID: 7112027983654536139}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2585980578013431791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003576194256374734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1165243845303912569
 GameObject:
   m_ObjectHideFlags: 0
@@ -13751,6 +13772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7112027983494279860}
+  - component: {fileID: 1457367862827916089}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -13777,6 +13799,26 @@ Transform:
   - {fileID: 6515129231772874300}
   m_Father: {fileID: 7112027983654536139}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1457367862827916089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112027983494279867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &7112027983567312056
 GameObject:
   m_ObjectHideFlags: 0
@@ -13842,7 +13884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7112027983654536139}
-  - component: {fileID: 6770987606483565387}
+  - component: {fileID: 32548283743728212}
   m_Layer: 7
   m_Name: ModulerHouse4_Door
   m_TagString: Untagged
@@ -13880,7 +13922,7 @@ Transform:
   - {fileID: 7802740173546918192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6770987606483565387
+--- !u!114 &32548283743728212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14023,6 +14065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7112027984972046812}
+  - component: {fileID: 6755651907505883316}
   m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
@@ -14048,6 +14091,26 @@ Transform:
   - {fileID: 7343178318144293510}
   m_Father: {fileID: 7112027983654536139}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6755651907505883316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112027984972046819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &7112027985076693453
 GameObject:
   m_ObjectHideFlags: 0

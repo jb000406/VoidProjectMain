@@ -138,6 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterAnimator: {fileID: 9090202900308082155}
   animTrigger: JumpScareTrigger
+  soundVolume: 1
+  triggerObj: {fileID: 9107447952407041581}
 --- !u!1 &436325631821887872
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ namespace VoidProject
 
         [SerializeField] private string animTrigger = "JumpScareTrigger";
         [SerializeField] private float soundVolume = 1f;
+
+        public GameObject triggerObj;
         #endregion
 
         private void Start()
@@ -29,6 +31,8 @@ namespace VoidProject
             //점프스케어
             SoundManager.Instance.PlayClipAtPoint(20, transform.position, soundVolume);
             monsterAnimator.SetTrigger(animTrigger);
+
+            Destroy(triggerObj);
         }
     }
 }

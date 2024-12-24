@@ -1795,6 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633034592455590553}
+  - component: {fileID: 5623655471375265703}
   m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
@@ -1820,6 +1821,26 @@ Transform:
   - {fileID: 1122020386203740611}
   m_Father: {fileID: 633034593823432846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5623655471375265703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633034592455590566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &633034592515143215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,7 +1903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633034592946844851}
-  - component: {fileID: 3599869448500450782}
+  - component: {fileID: 3724743084086085560}
   m_Layer: 7
   m_Name: Roofs
   m_TagString: Untagged
@@ -1926,7 +1947,7 @@ Transform:
   - {fileID: 1850828386108272855}
   m_Father: {fileID: 633034593823432846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3599869448500450782
+--- !u!114 &3724743084086085560
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1955,6 +1976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633034593664799217}
+  - component: {fileID: 3525810534888612620}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -1995,6 +2017,26 @@ Transform:
   - {fileID: 484844884353030040}
   m_Father: {fileID: 633034593823432846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3525810534888612620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633034593664799230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &633034593701083133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633034593823432846}
-  - component: {fileID: 7247847195519314526}
+  - component: {fileID: 9190888014804635880}
   m_Layer: 7
   m_Name: ModulerHouse2_Door
   m_TagString: Untagged
@@ -2114,7 +2156,7 @@ Transform:
   - {fileID: 1192035657847658036}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7247847195519314526
+--- !u!114 &9190888014804635880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8765,6 +8807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5189731618635944141}
+  - component: {fileID: 6286569078965140845}
   m_Layer: 7
   m_Name: Stairs
   m_TagString: Untagged
@@ -8794,6 +8837,26 @@ Transform:
   - {fileID: 4953394333886523190}
   m_Father: {fileID: 633034593823432846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6286569078965140845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558174701043372958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &3658728824842289198
 GameObject:
   m_ObjectHideFlags: 0
@@ -21117,6 +21180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6183340323404627345}
+  - component: {fileID: 3353974191594496117}
   m_Layer: 7
   m_Name: Railings
   m_TagString: Untagged
@@ -21154,6 +21218,26 @@ Transform:
   - {fileID: 1364344763506438295}
   m_Father: {fileID: 633034593823432846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3353974191594496117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7464550792898046091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &7467580370721337649
 GameObject:
   m_ObjectHideFlags: 0

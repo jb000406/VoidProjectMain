@@ -29,7 +29,6 @@ namespace VoidProject
         {
             if (collision.relativeVelocity.magnitude > velocity && !collision.transform.CompareTag("Player"))
             {
-                Debug.Log("Cracked");
                 float distance = Vector3.Distance(player_Transform.position, transform.position);
 
                 // 거리 범위에 따른 볼륨 계산

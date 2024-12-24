@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588645044689982210}
-  - component: {fileID: -6024640280233627771}
+  - component: {fileID: -5975819330343820613}
   m_Layer: 7
   m_Name: ModulerHouse_Made
   m_TagString: Untagged
@@ -143,7 +143,7 @@ Transform:
   - {fileID: 987723232196042929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &-6024640280233627771
+--- !u!114 &-5975819330343820613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 175583292192621584}
-  - component: {fileID: 8462473246947808992}
+  - component: {fileID: 7851800325750402082}
   m_Layer: 7
   m_Name: Roofs
   m_TagString: Untagged
@@ -320,7 +320,7 @@ Transform:
   - {fileID: 5538550770181045467}
   m_Father: {fileID: 588645044689982210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8462473246947808992
+--- !u!114 &7851800325750402082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,6 +587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1580139464040507013}
+  - component: {fileID: 8740288360378947796}
   m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
@@ -612,6 +613,26 @@ Transform:
   - {fileID: 8127753166095233790}
   m_Father: {fileID: 588645044689982210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8740288360378947796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942674816510325348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &7855697428262541422
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6301563868664918048}
+  - component: {fileID: 6467232591122800847}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -684,6 +706,26 @@ Transform:
   - {fileID: 1663290617407869283}
   m_Father: {fileID: 588645044689982210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6467232591122800847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140030762377963951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &120089330721674878
 PrefabInstance:
   m_ObjectHideFlags: 0

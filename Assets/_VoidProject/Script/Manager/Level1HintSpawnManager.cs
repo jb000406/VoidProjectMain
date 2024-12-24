@@ -75,7 +75,6 @@ namespace VoidProject
         {
             GameObject spawnedObject = Instantiate(chessObject, spawnPoint.position, Quaternion.identity);
             spawnedHintObj.Add(spawnedObject);
-            Debug.Log($"스폰된 오브젝트: {chessObject.name} at {spawnPoint.name}");
         }
     }
 }

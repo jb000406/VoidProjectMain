@@ -27,8 +27,6 @@ namespace HJ
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                Debug.Log("충돌");
-
                 Polishing();
             }
         }

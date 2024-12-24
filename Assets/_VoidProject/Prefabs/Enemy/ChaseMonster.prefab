@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb08fe24fb2b704590bb3226ebc91c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raderRadius: 5
+  raderRadius: 4
   moveSpeed: 1
   chaseSpeed: 4.5
   attackDistance: 2
@@ -471,7 +471,6 @@ MonoBehaviour:
   detectionRange: 15
   fieldOfView: 90
   eyePosition: {fileID: 7249494868690875180}
-  player_Transform: {fileID: 0}
   waypointParent: {fileID: 0}
 --- !u!195 &4004557306493800544
 NavMeshAgent:
@@ -1219,7 +1218,6 @@ MonoBehaviour:
   soundClipIndex: 12
   playerTransform: {fileID: 0}
   maxDistance: 15
-  closeRange: 5
 --- !u!1 &4772650817207839867
 GameObject:
   m_ObjectHideFlags: 0

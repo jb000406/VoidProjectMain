@@ -1059,6 +1059,10 @@ PrefabInstance:
       propertyPath: m_InvalidColorGradient.m_ColorSpace
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3310096719989177153, guid: 66c52b3b6ebd3024dae5fabe02b48101, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3938733691950374091, guid: 66c52b3b6ebd3024dae5fabe02b48101, type: 3}
       propertyPath: m_Name
       value: XR Origin (VR)

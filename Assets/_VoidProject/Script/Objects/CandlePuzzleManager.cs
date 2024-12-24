@@ -98,6 +98,7 @@ namespace VoidProject
 
             grave.SetActive(true);
 
+            SoundManager.Instance.PlayClipAtPoint(22, transform.position);
 
         }
     }

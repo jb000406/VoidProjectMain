@@ -46,20 +46,9 @@ namespace VoidProject
                     //트리거 작동
                     TriggerActivated();
                 }
-                else
-                {
-                    TriggerDeactivated();
-                }
             }
         }
 
-        private void OnTriggerExit(Collider other)
-        {
-            if(other.CompareTag("Player"))
-            {
-                TriggerDeactivated();
-            }
-        }
 
         //활성화
         private void TriggerActivated()
@@ -67,14 +56,14 @@ namespace VoidProject
             Debug.Log("바라보는 중");
             targetObejctParent.SetActive(true);
         }
-
+/*
         //비활성화
         private void TriggerDeactivated()
         {
             Debug.Log("비활성화");
 
             targetObejctParent.SetActive(false);
-        }
+        }*/
 
         //From 카메라 To 타겟 기즈모
         private void OnDrawGizmos()
@@ -85,7 +74,7 @@ namespace VoidProject
             Gizmos.color = Color.red;
             Gizmos.DrawLine(playerCamera.position, targetMirror.position);
         }
-
+/*
         //잡으면 타겟 메쉬렌더러 활성화
         private void OnGrab(SelectEnterEventArgs args)
         {
@@ -94,6 +83,6 @@ namespace VoidProject
                 targetObejctParent.gameObject.SetActive(true);
             }
             Destroy(this.gameObject);
-        }
+        }*/
     }
 }

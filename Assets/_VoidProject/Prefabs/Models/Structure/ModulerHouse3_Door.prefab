@@ -2347,7 +2347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5365638344782929658}
-  - component: {fileID: 3467802849486922520}
+  - component: {fileID: 2369130377553902055}
   m_Layer: 7
   m_Name: Roof
   m_TagString: Untagged
@@ -2375,7 +2375,7 @@ Transform:
   - {fileID: 6501072511692158803}
   m_Father: {fileID: 5951489677079261597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3467802849486922520
+--- !u!114 &2369130377553902055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3640,6 +3640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6628550097456622043}
+  - component: {fileID: 837050455228095325}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -3670,6 +3671,26 @@ Transform:
   - {fileID: 345137549145629263}
   m_Father: {fileID: 5951489677079261597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837050455228095325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569144891094758801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &4989632903929049102
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,7 +4424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5951489677079261597}
-  - component: {fileID: -2613765971145589953}
+  - component: {fileID: 4451359997334551335}
   m_Layer: 7
   m_Name: ModulerHouse3_Door
   m_TagString: Untagged
@@ -4440,7 +4461,7 @@ Transform:
   - {fileID: 1171807246139921805}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2613765971145589953
+--- !u!114 &4451359997334551335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6035,6 +6056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 418837629707709268}
+  - component: {fileID: 5882221663006755446}
   m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
@@ -6084,6 +6106,26 @@ Transform:
   - {fileID: 5128338190011202264}
   m_Father: {fileID: 5951489677079261597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5882221663006755446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426564828416269820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &6629598018130660012
 GameObject:
   m_ObjectHideFlags: 0

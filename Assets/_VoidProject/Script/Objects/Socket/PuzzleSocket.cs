@@ -60,18 +60,21 @@ namespace VoidProject
                 grabInteractable.selectEntered.AddListener(KeyHold);
                 grabInteractable.selectExited.AddListener(KeyRelease);
 
-                //퍼즐 아이템 위치, 방향
-                other.gameObject.transform.position = transform.position;
-                other.gameObject.transform.rotation = transform.rotation;
-
-                Rigidbody itemrb = other.GetComponent<Rigidbody>();
-
-                if (itemrb != null)
+                if (isRelease)
                 {
-                    itemrb.isKinematic = true;
-                }
+                    //퍼즐 아이템 위치, 방향
+                    other.gameObject.transform.position = transform.position;
+                    other.gameObject.transform.rotation = transform.rotation;
 
-                Compeleted();
+                    Rigidbody itemrb = other.GetComponent<Rigidbody>();
+
+                    if (itemrb != null)
+                    {
+                        itemrb.isKinematic = true;
+                    }
+
+                    Compeleted();
+                }
             }          
         }
 
@@ -80,7 +83,7 @@ namespace VoidProject
             Debug.Log("KeyHold");
             isRelease = false;
 
-            SoundManager.Instance.PlayClipAtPoint(soundIndex, transform.position);
+            //SoundManager.Instance.PlayClipAtPoint(soundIndex, transform.position);
         }
 
         public void KeyRelease(SelectExitEventArgs args)

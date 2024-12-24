@@ -73,7 +73,6 @@ namespace VoidProject
                     var bobj = Instantiate(randomBreakableObjectList[randomBreakobjInt], breakableSpawnerPoint[i].position, Quaternion.identity, breakableSpawnerPoint[i]);
                     BreakableObject breakobj = bobj.GetComponent<BreakableObject>();
                     breakobj.player_Transform = player_Transform;
-                    spawnObject.Add(bobj);
                 }
             }
 
