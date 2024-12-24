@@ -65,8 +65,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"1: R  2: G  3: B\n4: G  5: G\n\uC774 \uAD50\uD6C8\uC744 \uC0C8\uACA8\uB77C.\n\uCD08\uB85D
-    < \uAE08 < \uD68C\uC0C9\""
+  m_text: '"1: R  2: G  3: B
+
+    4: G  5: G"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fe8f2ac81ef077429dd6080591ec8b2, type: 2}
   m_sharedMaterial: {fileID: 3928840705791767432, guid: 8fe8f2ac81ef077429dd6080591ec8b2, type: 2}

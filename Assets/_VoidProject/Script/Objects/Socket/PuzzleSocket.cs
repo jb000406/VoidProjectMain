@@ -11,7 +11,7 @@ namespace VoidProject
 
         [SerializeField] protected bool isRelease = false;
 
-        [SerializeField] private int soundIndex = -1;
+        //[SerializeField] private int soundIndex = -1;
         [SerializeField] private float soundVolume = 1f;
 
         private XRGrabInteractable grabInteractable;

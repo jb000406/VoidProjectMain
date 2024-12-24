@@ -180,7 +180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.4, y: 35.6}
+  m_AnchoredPosition: {x: 17, y: 23}
   m_SizeDelta: {x: 278.3, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7858623998144429315
@@ -211,9 +211,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"\uBE44\uC11D \uD45C\uBA74\uC744 \uAC00\uB9AC\uB294 \uAC83\uC740\n\uC2DC\uAC04\uC758
-    \uD754\uC801, \uAE68\uB057\uC774 \uD558\uB77C.\n\uADF8\uB7EC\uBA74 \uC9C4\uC2E4\uC774
-    \uB4DC\uB7EC\uB0A0\n\uAC83\uC774\uB2E4.\""
+  m_text: "\"\uBE44\uC11D \uD45C\uBA74\uC744 \uAE68\uB057\uD558\uAC8C\n\uC720\uC9C0\uD558\uB77C.
+    \uC9C4\uC2E4\uC774\n\uB4DC\uB7EC\uB0A0 \uAC83\uC774\uB2E4.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8fe8f2ac81ef077429dd6080591ec8b2, type: 2}
   m_sharedMaterial: {fileID: 3928840705791767432, guid: 8fe8f2ac81ef077429dd6080591ec8b2, type: 2}
@@ -240,8 +239,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
