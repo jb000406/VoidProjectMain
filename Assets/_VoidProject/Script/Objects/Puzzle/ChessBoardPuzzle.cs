@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 
 namespace VoidProject
@@ -23,6 +22,7 @@ namespace VoidProject
 
         [SerializeField] private Transform spawnPoint;
         [SerializeField] private GameObject keyChest;
+        [SerializeField] private float soundVolume;
         #endregion
 
         private void Start()
@@ -70,6 +70,7 @@ namespace VoidProject
         {
             Debug.Log("퍼즐 완성");
             Instantiate(keyChest, spawnPoint.position, Quaternion.identity);
+            SoundManager.Instance.PlayClipAtPoint(22, transform.position, soundVolume);
         }
 
         //모든 소켓이 맞으면 true

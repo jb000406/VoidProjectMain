@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HJ
+namespace VoidProject
 {
     public class TriggerEnter : MonoBehaviour
     {

@@ -358,8 +358,8 @@ MonoBehaviour:
   doorObject: {fileID: 6318997842972342277}
   maxAngle: 90
   minAngle: -90
-  rotationSpeed: 10
-  doorCloseDistance: 1.2
+  rotationSpeed: 3
+  doorCloseDistance: 1
   doorAudio: {fileID: 5443315373876414620}
   autoCloseDelay: 2
   closeSpeed: 5

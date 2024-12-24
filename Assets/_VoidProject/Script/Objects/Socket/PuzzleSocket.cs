@@ -12,6 +12,7 @@ namespace VoidProject
         [SerializeField] protected bool isRelease = false;
 
         [SerializeField] private int soundIndex = -1;
+        [SerializeField] private float soundVolume = 1f;
 
         private XRGrabInteractable grabInteractable;
 
@@ -70,7 +71,7 @@ namespace VoidProject
                     itemrb.isKinematic = true;
                 }
 
-                
+                Compeleted();
             }          
         }
 
@@ -87,11 +88,18 @@ namespace VoidProject
             //
             Debug.Log("KeyRelease");
             isRelease = true;
+        }
 
-            for(int i = 0; i < doorChild.Length; i++)
+        private void Compeleted()
+        {
+            //사운드 재생
+            SoundManager.Instance.PlayClipAtPoint(22, transform.position, soundVolume);
+
+            //문 변경
+            for (int i = 0; i < doorChild.Length; i++)
             {
                 doorChild[i].gameObject.SetActive(true);
-                fakeDoorChild[i].gameObject.SetActive(false);    
+                fakeDoorChild[i].gameObject.SetActive(false);
             }
         }
     }

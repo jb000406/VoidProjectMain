@@ -36,7 +36,7 @@ namespace VoidProject
                 if (chess.chessIndex == socketIndex)
                 {
                     //사운드 재생
-                    SoundManager.Instance.PlayClipAtPoint(17, transform.position, soundVolume);
+                    SoundManager.Instance.PlayClipAtPoint(21, transform.position, soundVolume);
 
                     //체스말 장착
                     Insert(other);

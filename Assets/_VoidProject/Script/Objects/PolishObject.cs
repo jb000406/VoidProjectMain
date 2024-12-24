@@ -11,6 +11,7 @@ namespace HJ
         [SerializeField] private float conditioningValue = 2f;  //조정값
 
         public CanvasGroup canvasGroup;
+        private AudioSource audioSource;
         #endregion
 
 
@@ -18,6 +19,8 @@ namespace HJ
         {
             polishCount = 0;
             canvasGroup.alpha = 0;
+
+            audioSource = GetComponent<AudioSource>();
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -33,6 +36,11 @@ namespace HJ
         //닦을때 마다 점점 진해지기
         private void Polishing()
         {
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
             if (polishCount == maxPolishCount)
                 return;
 
