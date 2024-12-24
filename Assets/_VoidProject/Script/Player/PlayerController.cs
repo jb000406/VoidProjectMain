@@ -27,6 +27,8 @@ namespace VoidProject
         [SerializeField] private Image healthBarImage;
         [SerializeField] private Transform playerCamera; // 플레이어의 카메라
         private Coroutine hideHealthBarCoroutine; // 체력바 숨기기 코루틴
+
+        public GameUIManager gameUIManager;
         #endregion
 
         private void Start()
@@ -81,13 +83,25 @@ namespace VoidProject
 
             if (currentHealth < 0 && !isDeath)
             {
+                isDeath = true; 
                 Die();
+                // 체력바와 대미지 플래시 비활성화
+                if (healthBarUI != null)
+                {
+                    healthBarUI.SetActive(false);
+                }
+
+                if (damageFlash != null)
+                {
+                    damageFlash.SetActive(false);
+                }
             }
         }
 
         void Die()
         {
-            fader.FadeTo(2);        //Die 하면 게임 오버 시 씬 전환
+            isDeath = true;
+            gameUIManager.GameOver();
         }
 
         IEnumerator DamageEffect()

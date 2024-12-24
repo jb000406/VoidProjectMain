@@ -24,7 +24,7 @@ namespace VoidProject
         private void Start()
         {
             //초기화: 시작시 화면을 검정색으로 시작
-            image.color = new Color(0f, 0f, 0f, 0.6f);
+            image.color = new Color(0f, 0f, 0f, 1f);
         }
 
         public void FromFade(float delayTime = 0f)
@@ -61,6 +61,11 @@ namespace VoidProject
         {
             StartCoroutine(FadeOut(sceneNumber));
         }
+        public void FadeTo(float delayTime = 0f)
+        {
+            //씬 시작시 페이드인 효과
+            StartCoroutine(FadeOut(delayTime));
+        }
 
         IEnumerator FadeOut(string sceneName)
         {
@@ -70,6 +75,24 @@ namespace VoidProject
             while (t < 1f)
             {
                 t += Time.deltaTime;
+                float a = curve.Evaluate(t);
+                image.color = new Color(0f, 0f, 0f, a);
+                yield return null;
+            }
+        }
+        IEnumerator FadeOut(float delayTime)
+        {
+            if (delayTime > 0f)
+            {
+                yield return new WaitForSeconds(delayTime);
+            }
+
+            //1초동안 image a 1-> 0
+            float t = 1f;
+
+            while (t > 0)
+            {
+                t -= Time.deltaTime;
                 float a = curve.Evaluate(t);
                 image.color = new Color(0f, 0f, 0f, a);
                 yield return null;
