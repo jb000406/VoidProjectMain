@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_VoidProject/Scenes/StartMenu.unity
     guid: 23269f3903c085e4881f0bad236a205c
   - enabled: 1
     path: Assets/_VoidProject/Scenes/Stage_1.unity
     guid: a98429a198cc6f3439390223d4a236f7
-  - enabled: 1
+  - enabled: 0
     path: Assets/_VoidProject/Scenes/GameOver.unity
     guid: e0ca3327f7f392d4289beaba3f82a780
   m_configObjects:

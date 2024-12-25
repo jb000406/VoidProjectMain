@@ -12,6 +12,11 @@ namespace VoidProject
         [SerializeField] private float detectionRange = 10f; // 감지 범위
         [SerializeField] private float fieldOfView = 60f;    // 시야각 (각도)
 
+        private void Start()
+        {
+            player_transform = GameManager.Player_Transform;
+        }
+
         // Update is called once per frame
         void Update()
         {
@@ -31,6 +36,7 @@ namespace VoidProject
                         if (hit.collider.CompareTag("Player"))
                         {
                             SoundManager.Instance.PlayClipAtPoint(23, transform.position);
+                            this.enabled = false;
                             return;
                         }
                     }
@@ -38,12 +44,20 @@ namespace VoidProject
             }
         }
 
-        private void OnTriggerEnter(Collider other)
+
+        private void OnDrawGizmos()
         {
-            if(other.CompareTag("Player"))
-            {
-                player_transform = other.transform;
-            }
+            // 시야각 및 감지 범위 표시
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+            Vector3 leftBoundary = Quaternion.Euler(0, -fieldOfView / 2, 0) * transform.forward * detectionRange;
+            Vector3 rightBoundary = Quaternion.Euler(0, fieldOfView / 2, 0) * transform.forward * detectionRange;
+
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, transform.position + leftBoundary);
+            Gizmos.DrawLine(transform.position, transform.position + rightBoundary);
         }
     }
+
 }

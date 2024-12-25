@@ -24,8 +24,8 @@ public class AutoHeightControl : MonoBehaviour
     /// </summary>
     void AutoAdjustHeightAndColliders()
     {
-        // 1. VR 카메라(HMD)의 높이 가져오기
-        float headsetHeight = Mathf.Max(vrCamera.position.y, minHeight); // 최소 높이 보장
+        // 1. VR 카메라(HMD)의 로컬 높이 가져오기
+        float headsetHeight = Mathf.Max(vrCamera.localPosition.y, minHeight); // 최소 높이 보장
 
         // 2. 캐릭터 컨트롤러 조정
         characterController.height = headsetHeight; // 높이 설정
