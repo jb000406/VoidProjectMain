@@ -3640,7 +3640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6628550097456622043}
-  - component: {fileID: 837050455228095325}
+  - component: {fileID: 2587888583744645998}
   m_Layer: 7
   m_Name: Column
   m_TagString: Untagged
@@ -3671,7 +3671,7 @@ Transform:
   - {fileID: 345137549145629263}
   m_Father: {fileID: 5951489677079261597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &837050455228095325
+--- !u!114 &2587888583744645998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5890,7 +5890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5862756830129104914}
-  - component: {fileID: 7083026813922926724}
+  - component: {fileID: 3340011066747653004}
   m_Layer: 7
   m_Name: Floor0 (1)
   m_TagString: Untagged
@@ -5914,7 +5914,7 @@ Transform:
   - {fileID: 3133670886822190867}
   m_Father: {fileID: 5951489677079261597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7083026813922926724
+--- !u!114 &3340011066747653004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6056,7 +6056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 418837629707709268}
-  - component: {fileID: 5882221663006755446}
+  - component: {fileID: 8166175920950640627}
   m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
@@ -6106,7 +6106,7 @@ Transform:
   - {fileID: 5128338190011202264}
   m_Father: {fileID: 5951489677079261597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5882221663006755446
+--- !u!114 &8166175920950640627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
