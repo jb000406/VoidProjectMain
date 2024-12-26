@@ -175,7 +175,7 @@ namespace VoidProject
         {
             SetState(true, false, true, false);
             agent.SetDestination(transform.position);
-            //SoundManager.Instance.PlayClipAtPoint(1, transform.position, 1f);
+            SoundManager.Instance.PlayClipAtPoint(1, transform.position, 1f);
             Vector3 direction = (target.position - transform.position).normalized;
             transform.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         }

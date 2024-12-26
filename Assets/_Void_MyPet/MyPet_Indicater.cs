@@ -83,9 +83,14 @@ public class MyPet_Indicater : MonoBehaviour
             case PetState.Idle:
                 if (animator != null)
                 {
+                    GameManager.IsInteractiveWithPet = false;
+                    GameManager.ToggleCanvas(false);
                     animator.SetFloat("MoveX", 0);
                     animator.SetBool("IsLieSleep", true);
-                    GameManager.Player_Transform.GetChild(1).gameObject.SetActive(true);
+                    if (currentWaypointIndex < 4)
+                    {
+                        GameManager.Player_Transform.GetChild(1).gameObject.SetActive(true);
+                    }
                     // navAgent.enabled = false;
                 }
                 break;
@@ -117,7 +122,7 @@ public class MyPet_Indicater : MonoBehaviour
     {
 
     }
-    
+
     private void SetleIndicate()
     {
 
@@ -148,30 +153,54 @@ public class MyPet_Indicater : MonoBehaviour
         StartCoroutine(MoveTowards(nextWaypoint));
     }
 
-    private IEnumerator MoveTowards(Vector3 target)
+    private IEnumerator MoveTowards(Vector3 targetPosition)
     {
+        Vector3 target = AdjustHeightToTerrain(targetPosition);
         animator.SetFloat("MoveX", 2);
+
+        if (GameManager.IsInteractiveWithPet)
+        {
+            DisplayText();
+        }
+
         while (Vector3.Distance(transform.position, target) > 0.1f)
         {
             Vector3 direction = (target - transform.position).normalized;
+
             if (direction != Vector3.zero)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             }
+
             transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
             yield return null;
         }
 
-        isMoving = false; // 이동 완료 후 플래그 비활성화
+        //while (Vector3.Distance(transform.position, GameManager.Player_Transform.position) > 0.1f)
+        //{
+        //    Vector3 directionToPlayer = (GameManager.Player_Transform.position - transform.position).normalized;
+
+        //    if (directionToPlayer != Vector3.zero)
+        //    {
+        Vector3 directionToPlayer = (GameManager.Player_Transform.position - transform.position).normalized;
+        Quaternion targetRotation2 = Quaternion.LookRotation(directionToPlayer);
+        transform.rotation = targetRotation2;
+        //    }
+
+        //    yield return null;
+        //}
+
+        isMoving = false;
         animator.SetFloat("MoveX", 0);
         ChangeState(PetState.Idle);
     }
 
+
     private Vector3 AdjustHeightToTerrain(Vector3 position)
     {
         RaycastHit hit;
-        if (Physics.Raycast(position + Vector3.up * 10f, Vector3.down, out hit, Mathf.Infinity))
+        if (Physics.Raycast(position + Vector3.up * 0.5f, Vector3.down, out hit, Mathf.Infinity))
         {
             position.y = hit.point.y;
         }
@@ -188,16 +217,31 @@ public class MyPet_Indicater : MonoBehaviour
     {
         if (animator != null)
         {
-            GameManager.Player_Transform.GetChild(1).gameObject.SetActive(false);
+            if (currentWaypointIndex < 4)
+            {
+                GameManager.Player_Transform.GetChild(1).gameObject.SetActive(false);
+            }
             animator.SetBool("IsLieSleep", false);
-            animator.SetBool("IsEat", true);
-            GameManager.IsInteractiveWithPet = true;
-            DisplayText();
+            //animator.SetBool("IsEat", true);
+            animator.SetBool("IsSit", true);
         }
 
-        StartCoroutine(WaitForAnimationAndMove());
+        StartCoroutine(WaitTextReadEnd());
+        // 먹이줬을때의 행동일때 사용
+        //StartCoroutine(WaitForAnimationAndMove());
     }
 
+    private IEnumerator WaitTextReadEnd()
+    {
+        yield return new WaitForSeconds(3f);
+        if (animator != null)
+        {
+            animator.SetBool("IsSit", false);
+        }
+        GameManager.IsInteractiveWithPet = true;
+        DisplayText();
+        ChangeState(PetState.Move);
+    }
     private IEnumerator WaitForAnimationAndMove()
     {
         yield return new WaitUntil(() => IsAnimationFinished("IsEat"));
@@ -206,8 +250,6 @@ public class MyPet_Indicater : MonoBehaviour
         {
             animator.SetBool("IsEat", false);
         }
-        GameManager.IsInteractiveWithPet = false;
-        GameManager.ToggleCanvas(false);
         ChangeState(PetState.Move);
     }
 

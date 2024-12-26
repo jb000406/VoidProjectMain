@@ -77,7 +77,7 @@ namespace VoidProject
             {
                 int randomAmbusherobjInt = Random.Range(0, randomAmbusherList.Count);
                 RandomNumber();
-                if (RandomNumber() % 4 == 0)
+                if (RandomNumber() % 5 == 0)
                 {
                     var cobj = Instantiate(randomAmbusherList[randomAmbusherobjInt], AmbusherSpawnerPoint[i].position, AmbusherSpawnerPoint[i].transform.rotation, AmbusherSpawnerPoint[i]);
                     cobj.transform.localScale = new Vector3(1f, 1f, 1f);

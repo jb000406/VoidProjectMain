@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3712575778875635893}
   - component: {fileID: 7677795777038960796}
   - component: {fileID: 983627225319836194}
-  - component: {fileID: 8185014772572883931}
+  - component: {fileID: 2713687076903314433}
   m_Layer: 7
   m_Name: 01_3
   m_TagString: Untagged
@@ -183,8 +183,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8185014772572883931
-MeshCollider:
+--- !u!65 &2713687076903314433
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -201,10 +201,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d18bbb5cda5f2114f85dfb0896f7d1d4, type: 2}
+  serializedVersion: 3
+  m_Size: {x: 103.49252, y: 200.00002, z: 116.61216}
+  m_Center: {x: -0.00006866455, y: 100.00001, z: 0.000035285946}
 --- !u!1 &1161714268662676696
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,14 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ca23dc4df067f45947697eaad2e628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomSmallBreakObjectList:
-  - {fileID: 2056936160079735749, guid: cbc978bef730415429b1bacf6d1760cd, type: 3}
-  - {fileID: 5300362595142158764, guid: 640868ded539561429ab9eca2da85be4, type: 3}
-  - {fileID: 4985329108753207008, guid: ee9f093fb673aca4d8556b89085740d9, type: 3}
-  - {fileID: 8778966476545359626, guid: 74567fdd26706a94a89584be96929dfd, type: 3}
-  - {fileID: 3128590398170484182, guid: d0398d8d5a4dfc042a7bec496df6146e, type: 3}
-  - {fileID: 3776110343712532574, guid: ff004fbe2699ea041ac654260b4973ee, type: 3}
-  SmallBreakparentSpawner: {fileID: 654898079557678964}
+  randomSmallBreakObjectList: []
+  SmallBreakparentSpawner: {fileID: 0}
   SmallBreakSpawnerPoint: []
   randomAmbusherList:
   - {fileID: 7338824385307977190, guid: 5e13e94694ded7b4c834f572a73cf7e8, type: 3}
