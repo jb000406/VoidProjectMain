@@ -31,7 +31,6 @@ namespace VoidProject
 
             // UI 초기화
             ShowStartUI();
-            Locomotion.SetActive(false);
         }
 
         private void Update()
@@ -45,17 +44,21 @@ namespace VoidProject
             // 게임 시작 화면 UI 위치 업데이트
             if (startUI.gameObject.activeInHierarchy)
             {
-                startUI.transform.position = head.position + new Vector3(head.forward.x, 0f, head.forward.z).normalized * distance;
-                startUI.transform.LookAt(new Vector3(head.position.x, startUI.transform.position.y, head.position.z));
-                startUI.transform.forward *= -1;
+                //startUI.transform.position = head.position + new Vector3(head.forward.x, 0f, head.forward.z).normalized * distance;
+                //startUI.transform.LookAt(new Vector3(head.position.x, startUI.transform.position.y, head.position.z));
+                //startUI.transform.forward *= -1;
+                startUI.transform.position = head.position + head.forward * 0.5f;
+                startUI.transform.rotation = Quaternion.LookRotation(head.forward);
             }
 
             // 게임 오버 화면 UI 위치 업데이트
             if (gameOverUI.gameObject.activeInHierarchy)
             {
-                gameOverUI.transform.position = head.position + new Vector3(head.forward.x, 0f, head.forward.z).normalized * distance;
+                /*gameOverUI.transform.position = head.position + new Vector3(head.forward.x, 0f, head.forward.z).normalized * distance;
                 gameOverUI.transform.LookAt(new Vector3(head.position.x, gameOverUI.transform.position.y, head.position.z));
-                gameOverUI.transform.forward *= -1;
+                gameOverUI.transform.forward *= -1;*/
+                gameOverUI.transform.position = head.position + head.forward * 0.5f;
+                gameOverUI.transform.rotation = Quaternion.LookRotation(head.forward);
             }
 
         }
