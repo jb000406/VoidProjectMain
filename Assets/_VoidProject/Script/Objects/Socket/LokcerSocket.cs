@@ -50,7 +50,7 @@ namespace VoidProject
         //자물쇠 열기
         IEnumerator LockerOpen(Collider other)
         {
-            if(isRelease)
+            if(isRelease && !other.CompareTag("Player"))
             {
                 yield return new WaitForSeconds(animTerm);
 

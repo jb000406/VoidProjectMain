@@ -12,6 +12,8 @@ namespace HJ
 
         public CanvasGroup canvasGroup;
         private AudioSource audioSource;
+
+        public GameObject triggerObj;
         #endregion
 
 
@@ -28,6 +30,7 @@ namespace HJ
             if (collision.gameObject.CompareTag("Player"))
             {
                 Polishing();
+                triggerObj.SetActive(true);
             }
         }
 
