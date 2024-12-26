@@ -237,23 +237,6 @@ namespace VoidProject
             isDetected = false;
         }
 
-        private void OnDrawGizmos()
-        {
-            // 시야각 및 감지 범위 표시
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, detectionRange);
-
-            Vector3 leftBoundary = Quaternion.Euler(0, -fieldOfView / 2, 0) * transform.forward * detectionRange;
-            Vector3 rightBoundary = Quaternion.Euler(0, fieldOfView / 2, 0) * transform.forward * detectionRange;
-
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, transform.position + leftBoundary);
-            Gizmos.DrawLine(transform.position, transform.position + rightBoundary);
-
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, raderRadius);
-        }
-
 
     }
 

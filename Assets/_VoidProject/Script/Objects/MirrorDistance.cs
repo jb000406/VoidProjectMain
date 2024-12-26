@@ -6,7 +6,6 @@ namespace VoidProject
     public class MirrorDistance : MonoBehaviour
     {
         #region Variables
-        public Transform player;
         public GameObject mirrorLight;
 
         [SerializeField] private float playerDistance = 1f;
@@ -31,7 +30,7 @@ namespace VoidProject
 
         private bool IsNearPlayer()
         {
-            float distance = Vector3.Distance(player.position, transform.position);
+            float distance = Vector3.Distance(GameManager.Player_Transform.position, transform.position);
 
             return (distance <= playerDistance);
         }
