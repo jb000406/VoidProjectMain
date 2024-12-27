@@ -10103,7 +10103,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 32
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -10229,6 +10229,7 @@ MonoBehaviour:
   ignitionVelocity: 0.001
   isIgnition: 0
   burntDelay: 10
+  soundVolume: 1
 --- !u!1 &1374765936082709833
 GameObject:
   m_ObjectHideFlags: 0
@@ -54341,7 +54342,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 8
+    m_Bits: 32
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -54479,6 +54480,7 @@ MonoBehaviour:
   ignitionVelocity: 0.001
   isIgnition: 0
   burntDelay: 10
+  soundVolume: 1
 --- !u!1 &3800068346467033833
 GameObject:
   m_ObjectHideFlags: 0
@@ -64383,7 +64385,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 32
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -64509,6 +64511,7 @@ MonoBehaviour:
   ignitionVelocity: 0.001
   isIgnition: 0
   burntDelay: 10
+  soundVolume: 1
 --- !u!1 &5111343022348312546
 GameObject:
   m_ObjectHideFlags: 0
@@ -74481,6 +74484,7 @@ GameObject:
   - component: {fileID: 6707480307645905014}
   - component: {fileID: 3039486879787027549}
   - component: {fileID: 7656731918837224170}
+  - component: {fileID: 1206230496403940312}
   m_Layer: 0
   m_Name: MatchBox
   m_TagString: Untagged
@@ -74611,7 +74615,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 4
+    m_Bits: 16
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -74733,6 +74737,22 @@ MonoBehaviour:
   matches: {fileID: 5111343022348312546}
   playAnimString: IsHold
   isGrabbed: 0
+--- !u!114 &1206230496403940312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5841111269192370754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f2b6fd29b73db4681295074f82f2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 1
+  maxDistance: 15
+  soundIndex: 18
+  maxSoundVolume: 1
 --- !u!1 &5982107796562313165
 GameObject:
   m_ObjectHideFlags: 0
@@ -74888,7 +74908,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 32
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -75014,6 +75034,7 @@ MonoBehaviour:
   ignitionVelocity: 0.001
   isIgnition: 0
   burntDelay: 10
+  soundVolume: 1
 --- !u!1 &6034613016606643970
 GameObject:
   m_ObjectHideFlags: 0
@@ -85070,7 +85091,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 32
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -85196,6 +85217,7 @@ MonoBehaviour:
   ignitionVelocity: 0.001
   isIgnition: 0
   burntDelay: 10
+  soundVolume: 1
 --- !u!1 &7239233474157876980
 GameObject:
   m_ObjectHideFlags: 0

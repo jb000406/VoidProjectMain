@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
 using VoidProject;
-using UnityEngine.UI;
 
 public enum PetState
 {
@@ -30,7 +29,6 @@ public class MyPet_Indicater : MonoBehaviour
     private Animator animator;
     private PetState currentState = PetState.Dissolve;
     private bool isMoving = false; // 이동 중인지 확인하는 플래그
-    private bool isToggle = false;
 
     private void Start()
     {
@@ -165,16 +163,9 @@ public class MyPet_Indicater : MonoBehaviour
             DisplayText();
         }
 
-
-        if (currentWaypointIndex >= 4)
-        {
-            yield return new WaitForSeconds(4f);
-            GameManager.ToggleCanvas(false);
-        }
         while (Vector3.Distance(transform.position, target) > 0.1f)
         {
             Vector3 direction = (target - transform.position).normalized;
-
 
             if (direction != Vector3.zero)
             {
@@ -242,7 +233,7 @@ public class MyPet_Indicater : MonoBehaviour
 
     private IEnumerator WaitTextReadEnd()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         if (animator != null)
         {
             animator.SetBool("IsSit", false);

@@ -17,7 +17,6 @@ namespace VoidProject
         private Transform head; //플레이어 카메라
         private Vector3 playerStartPos; // 플레이어 초기 위치
         private Quaternion playerStartRot; // 플레이어 초기 회전
-        [SerializeField] private float distance = 1f;
 
         public PlayerController player; // 플레이어 컨트롤러
         public GameObject Locomotion; //플레이어 무브
