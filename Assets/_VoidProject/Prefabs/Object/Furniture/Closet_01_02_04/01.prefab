@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 7677795777038960796}
   - component: {fileID: 983627225319836194}
   - component: {fileID: 2713687076903314433}
+  - component: {fileID: 2211664088857184327}
   m_Layer: 7
   m_Name: 01_3
   m_TagString: Untagged
@@ -204,6 +205,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 103.49252, y: 200.00002, z: 116.61216}
   m_Center: {x: -0.00006866455, y: 100.00001, z: 0.000035285946}
+--- !u!54 &2211664088857184327
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786817715982021343}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1161714268662676696
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161714268662676696}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.25881907, z: -0, w: 0.9659259}
+  m_LocalRotation: {x: 0, y: 0.2588191, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -242,7 +270,7 @@ Transform:
   - {fileID: 3808807528670226911}
   - {fileID: 466008741405454203}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
 --- !u!114 &6271142603503921085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +618,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 2
 --- !u!114 &3117489284977040605
 MonoBehaviour:
@@ -723,7 +751,7 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927440479615387888}
   serializedVersion: 3
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 2211664088857184327}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 69.99, z: 0}
   m_Axis: {x: 1, y: 226, z: 0}
@@ -1054,7 +1082,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 2
 --- !u!114 &7701954840975558184
 MonoBehaviour:
@@ -1187,7 +1215,7 @@ HingeJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7408760110387849407}
   serializedVersion: 3
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 2211664088857184327}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 55.07, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}

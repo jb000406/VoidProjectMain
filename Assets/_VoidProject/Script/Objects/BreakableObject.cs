@@ -19,10 +19,7 @@ namespace VoidProject
 
         private void Start()
         {
-            //foreach (Rigidbody rb in crackedPrefab.GetComponentsInChildren<Rigidbody>())
-            //{
-            //    crackedRigidbodies.Add(rb);
-            //}
+            player_Transform = GameManager.Player_Transform;
         }
 
         private void OnCollisionEnter(Collision collision)
