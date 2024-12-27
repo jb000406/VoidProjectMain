@@ -22,7 +22,7 @@ namespace VoidProject
         [SerializeField] private List<GameObject> spawnObject = new List<GameObject>();
 
         [SerializeField] private Transform player_Transform;
-        private void Awake()
+        private void Start()
         {
             if (SmallBreakparentSpawner != null)
             {

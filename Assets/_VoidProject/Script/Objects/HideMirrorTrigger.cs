@@ -8,7 +8,7 @@ namespace VoidProject
     public class HideMirrorTrigger : MonoBehaviour
     {
         #region Variables
-        public Transform playerCamera;  //플레이어 카메라
+        private Transform playerCamera;  //플레이어 카메라
         public Transform targetMirror;  //거울
         public GameObject targetObejctParent;  //대상 부모 오브젝트
 
@@ -19,11 +19,13 @@ namespace VoidProject
 
         private void Start()
         {
-/*            //메쉬 렌더러 비활성화
+            /*//메쉬 렌더러 비활성화
             targetRenderer.enabled = false;
 
             //이벤트 함수 등록
             targetInteractable.selectEntered.AddListener(OnGrab);*/
+
+            playerCamera = Camera.main.transform;
         }
 
         private void OnTriggerStay(Collider other)

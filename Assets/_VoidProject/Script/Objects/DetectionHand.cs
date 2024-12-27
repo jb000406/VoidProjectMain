@@ -1,11 +1,12 @@
 using UnityEngine;
+using VoidProject;
 
 
 public class DetectionHand : MonoBehaviour
 {
     #region Variables
-    public Collider leftHand;
-    public Collider rightHand;
+    private Collider leftHand;
+    private Collider rightHand;
     public Transform position;
     //[SerializeField] private bool isNearHand = false;
 
@@ -15,7 +16,10 @@ public class DetectionHand : MonoBehaviour
     private void Start()
     {
         Collider collider = GetComponent<Collider>();
-        
+
+        leftHand = GameManager.LeftController.GetComponent<Collider>();
+        rightHand = GameManager.RightController.GetComponent<Collider>();
+
         leftHand.enabled = false;
         rightHand.enabled = false;
     }
@@ -25,7 +29,7 @@ public class DetectionHand : MonoBehaviour
         CollidersEnabled();
     }
 
-    //¼ÕÀÌ ±ÙÃ³¿¡ ÀÖ´ÂÁö ÆÇº°
+    //ì†ì´ ê·¼ì²˜ì— ìˆëŠ”ì§€ íŒë³„
     private bool IsNearPlayer()
     {
         float leftDistance = Vector3.Distance(leftHand.transform.position, position.position);
@@ -33,7 +37,7 @@ public class DetectionHand : MonoBehaviour
         return (leftDistance <= playerDistance) || (rightDistance <= playerDistance);
     }
 
-    //Äİ¶óÀÌ´õ È°¼ºÈ­
+    //ì½œë¼ì´ë” í™œì„±í™”
     private void CollidersEnabled()
     {
         if (IsNearPlayer())
@@ -49,12 +53,10 @@ public class DetectionHand : MonoBehaviour
         }
     }
 
-    //µô·¹ÀÌ
+    //ë”œë ˆì´
     private void DisableCollidersDelayed()
     {
         leftHand.enabled = false;
         rightHand.enabled = false;
-
-        //isNearHand = false;
     }
 }

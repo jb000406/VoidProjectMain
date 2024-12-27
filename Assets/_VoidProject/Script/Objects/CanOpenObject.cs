@@ -2,9 +2,8 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
-using VoidProject;
 
-namespace HJ
+namespace VoidProject
 {
     public class CanOpenObject : MonoBehaviour
     {
@@ -41,6 +40,11 @@ namespace HJ
 
             //초기 회전 값 저장
             lastRotation = transform.rotation;
+
+            //플레이어와의 콜라이더 충돌 무시
+            Collider playerCollider = GameManager.Player_Transform.GetComponent<Collider>();
+            Collider doorCollider = GetComponent<Collider>();
+            Physics.IgnoreCollision(playerCollider, doorCollider);
         }
 
         private void Update()
