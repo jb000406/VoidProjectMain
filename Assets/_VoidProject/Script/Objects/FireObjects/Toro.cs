@@ -35,7 +35,10 @@ namespace VoidProject
             Debug.Log("충돌");
             transform.GetChild(0).gameObject.SetActive(true);
             isActive = true;
-            fakeWall.SetActive(false);
+            if (fakeWall != null)
+            {
+                fakeWall.SetActive(false);
+            }
         }
     }
 }

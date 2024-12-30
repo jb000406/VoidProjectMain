@@ -5,7 +5,6 @@ namespace VoidProject
     public class EnemyAttackAnimation : MonoBehaviour
     {
         [Header("Enemy Attack Animation")]
-        public GameObject thePlayer;
         private Animator animator;
         [SerializeField] private float attackDamage = 10f;       //공격 데미지
         private void Start()
@@ -18,9 +17,9 @@ namespace VoidProject
         {
             Debug.Log("플레이어에게 데미지를 준다");
             // 플레이어에게 데미지
-            if (thePlayer != null)
+            if (GameManager.Player_Transform != null)
             {
-                IDamageable damageable = thePlayer.GetComponent<IDamageable>();
+                IDamageable damageable = GameManager.Player_Transform.GetComponent<IDamageable>();
                 if (damageable != null)
                 {
                     damageable.TakeDamage(attackDamage);
